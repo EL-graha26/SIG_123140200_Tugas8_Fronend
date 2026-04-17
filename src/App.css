@@ -1,0 +1,41 @@
+.app-container { width: 100%; height: 100%; position: relative; }
+
+.header {
+  position: absolute;
+  top: 0; left: 0; width: 100%;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #0ea5e9;
+  text-align: center;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.header h1 { margin: 0; font-size: 24px; color: #0f172a; pointer-events: auto; }
+.header p { margin: 5px 0 0 0; color: #64748b; font-size: 14px; }
+
+.map-wrapper { width: 100%; height: 100vh; }
+
+.map-legend {
+  position: absolute;
+  bottom: 30px; right: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.map-legend h4 { margin: 0 0 10px 0; color: #1e293b; font-size: 14px; text-transform: uppercase; }
+.legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 13px; color: #475569; font-weight: 500; }
+.dot { width: 14px; height: 14px; border-radius: 50%; margin-right: 10px; border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+
+/* Warna Legenda Sesuai MapView */
+.dot.pantai { background-color: #0284c7; }
+.dot.alam { background-color: #16a34a; }
+.dot.sejarah { background-color: #b45309; }
+.dot.kuliner { background-color: #e11d48; }
+
+/* Styling Popup Leaflet */
+.leaflet-popup-content-wrapper { border-radius: 8px !important; box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important; }
